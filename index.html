@@ -5,13 +5,100 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gllacy-shop</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="main-header"></header>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <nav class="main-header__nav main-nav">
+        <div class="main-nav__list site-nav">
+          <a class="site-nav__logo logo" href="index.html">
+            <img class="logo__img" src="images/logo.svg" width="137" height="56" alt="Логотип магазина Глейси">
+          </a>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Каталог</a>      
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Доставка и оплата</a>      
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">О компании</a>      
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__list user-nav">
+          <a class="user-nav__phone" href="tel:88005558628">+7 800 555-86-28</a>
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">
+                <img class="user-nav__img" src="images/search.svg" width="13" height="13">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">
+                <img class="user-nav__img" src="images/login.svg" width="13" height="13">
+                Вход
+              </a>
+            </li>
+            <li class="user-nav__item">
+              <a class="user-nav__link" href="#">
+                <img class="user-nav__img" src="images/cart.svg" width="14" height="13">
+                2 товара
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
   <main class="main-index"></main>
-  <footer class="main-footer"></footer>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <ul class="main-footer__list social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="images/telegram.svg" width="24" height="24">
+            <span class="visually-hidden">Мы в Телеграм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="images/vk.svg" width="24" height="24">
+            <span class="visually-hidden">Мы в ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__img" src="images/youtube.svg" width="24" height="24">
+            <span class="visually-hidden">Мы в Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="main-footer__list footer-nav">
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Для поставщиков</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">О производстве</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Наши документы</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+      <div class="main-footer__list copyright">
+        <a class="copyright__link" href="#">
+          <img class="copyright__img" src="images/logo_htmlacademy.svg" width="93" height="27" alt="Логотип HTML Academy">
+        </a>
+        <p class="copyright__text">Сделано в <a href="#">.html academy</a> © 2021</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
