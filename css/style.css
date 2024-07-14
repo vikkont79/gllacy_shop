@@ -10,3 +10,18 @@
    background-color: #FEAFC3;
    color: #2D3340;
 }
+
+.main-header__wrapper {
+  inline-size: 1170px;
+  margin-inline: auto;
+}
+
+.main-index__wrapper {
+  inline-size: 1170px;
+  margin-inline: auto;
+}
+
+.main-footer__wrapper {
+  inline-size: 1366px;
+  margin-inline: auto;
+}
