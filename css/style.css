@@ -290,7 +290,7 @@ img {
   margin: 0;  
 }
 
-.index-block {
+.main-index__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -405,11 +405,9 @@ img {
     font-weight: 700;
 }
 
-.main-footer__wrapper {
-  inline-size: 1170px;
+.main-footer {  
   display: flex;
-  justify-content: space-between;
-  margin-inline: auto;
+  justify-content: space-between;  
 }
 
 .social {
