@@ -335,6 +335,7 @@ img {
 
 .delivery {
   display: flex;
+  padding-block: 64px;
   background-color: #FFFFFF;
   border-radius: 16px;
   background-image: url(../images/delivery-bg.png);
@@ -348,8 +349,66 @@ img {
   font-weight: 900;
 }
 
+.delivery__intro {
+  margin-inline-start: 64px;
+}
+
+.delivery__info {
+  margin-inline-end: 64px;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+}
+
+.contacts {
+  padding-block: 64px;
+  border-radius: 16px;
+  background-image: url(../images/contacts-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.contacts__wrapper {
+  margin-inline-start: 64px;  
+  inline-size: 343px;  
+  border-radius: 8px;
+  background-color: #FCFCFC;  
+}
+
+.contacts__adress {
+  font-style: normal;
+}
+
+.contacts__text {
+  color: #565C66;
+}
+
+.contacts__text--adress {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts__text--time {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__phone {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts__button {
+    line-height: 20px;
+    font-weight: 700;
+}
+
 .main-footer__wrapper {
-  inline-size: 1366px;
+  inline-size: 1170px;
+  display: flex;
+  justify-content: space-between;
   margin-inline: auto;
 }
 
@@ -357,4 +416,20 @@ img {
   display: flex;
   padding: 0;
   list-style-type: none;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 24px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 16px;
 }
