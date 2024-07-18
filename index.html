@@ -93,15 +93,7 @@
             <ul class="icecream__slide-show slide-show">
               <li class="slide-show__item slide slide--current">
                 <img class="slide__img" src="images/icecream-strawberry-current.png" width="328" height="507"
-                  alt="Клубничный рожок">
-                <div class="slide__control">
-                  <button class="slide__button slide__button--prev">
-                    <span class="visually-hidden">Предыдущий слайд</span>
-                  </button>
-                  <button class="slide__button slide__button--next">
-                    <span class="visually-hidden">Следующий слайд</span>
-                  </button>
-                </div>
+                  alt="Клубничный рожок">                
               </li>
               <li class="slide-show__item slide">
                 <img class="slide__img" src="images/icecream-banana.png" width="66" height="150" alt="Банановый рожок">
@@ -109,39 +101,6 @@
               <li class="slide-show__item slide">
                 <img class="slide__img" src="images/icecream-caramel.png" width="66" height="150"
                   alt="Карамельный рожок">
-              </li>
-            </ul>
-          </div>
-          <div class="icecream__footer">
-            <p class="icecream__toggles slider__toggles">
-              <button class="icecream__toggle slider__toggle" type="button" id="strawberry">
-                <span class="visually-hidden">1</span>
-              </button>
-              <button class="icecream__toggle slider__toggle" type="button" id="banana">
-                <span class="visually-hidden">2</span>
-              </button>
-              <button class="icecream__toggle slider__toggle" type="button" id="caramel">
-                <span class="visually-hidden">3</span>
-              </button>
-            </p>
-            <ul class="main-footer__list social">
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="images/telegram.svg" width="24" height="24">
-                  <span class="visually-hidden">Мы в Телеграм</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="images/vk.svg" width="24" height="24">
-                  <span class="visually-hidden">Мы в ВКонтакте</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="images/youtube.svg" width="24" height="24">
-                  <span class="visually-hidden">Мы в Ютуб</span>
-                </a>
               </li>
             </ul>
           </div>
@@ -181,39 +140,6 @@
               </li>
             </ul>
           </div>
-          <div class="icecream__footer">
-            <p class="icecream__toggles slider__toggles">
-              <button class="icecream__toggle slider__toggle" type="button" id="strawberry">
-                <span class="visually-hidden">1</span>
-              </button>
-              <button class="icecream__toggle slider__toggle" type="button" id="banana">
-                <span class="visually-hidden">2</span>
-              </button>
-              <button class="icecream__toggle slider__toggle" type="button" id="caramel">
-                <span class="visually-hidden">3</span>
-              </button>
-            </p>
-            <ul class="main-footer__list social">
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="images/telegram.svg" width="24" height="24">
-                  <span class="visually-hidden">Мы в Телеграм</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="images/vk.svg" width="24" height="24">
-                  <span class="visually-hidden">Мы в ВКонтакте</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="images/youtube.svg" width="24" height="24">
-                  <span class="visually-hidden">Мы в Ютуб</span>
-                </a>
-              </li>
-            </ul>
-          </div>
         </li>
         <li class="promo__item slider__item icecream">
           <div class="icecream__block icecream__block--caramel">
@@ -249,41 +175,49 @@
               </li>
             </ul>
           </div>
-          <div class="icecream__footer">
-            <p class="icecream__toggles slider__toggles">
-              <button class="icecream__toggle slider__toggle" type="button" id="strawberry">
-                <span class="visually-hidden">1</span>
-              </button>
-              <button class="icecream__toggle slider__toggle" type="button" id="banana">
-                <span class="visually-hidden">2</span>
-              </button>
-              <button class="icecream__toggle slider__toggle" type="button" id="caramel">
-                <span class="visually-hidden">3</span>
-              </button>
-            </p>
-            <ul class="main-footer__list social">
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="images/telegram.svg" width="24" height="24">
-                  <span class="visually-hidden">Мы в Телеграм</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="images/vk.svg" width="24" height="24">
-                  <span class="visually-hidden">Мы в ВКонтакте</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <img class="social__img" src="images/youtube.svg" width="24" height="24">
-                  <span class="visually-hidden">Мы в Ютуб</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
+        </li>        
       </ul>
+      <div class="promo__controls slider__controls">
+        <button class="promo__button promo__button--prev slider__button slider__button--prev">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="promo__button promo__button--next slider__button slider__button--next">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+      </div>
+      <div class="promo__footer">
+        <p class="promo__toggles slider__toggles">
+          <button class="promo__toggle promo__toggle--current slider__toggle slider__toggle--current" type="button" id="strawberry">
+            <span class="visually-hidden">1</span>
+          </button>
+          <button class="promo__toggle slider__toggle" type="button" id="banana">
+            <span class="visually-hidden">2</span>
+          </button>
+          <button class="promo__toggle slider__toggle" type="button" id="caramel">
+            <span class="visually-hidden">3</span>
+          </button>
+        </p>
+        <ul class="promo__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/telegram.svg" width="24" height="24">
+              <span class="visually-hidden">Мы в Телеграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/vk.svg" width="24" height="24">
+              <span class="visually-hidden">Мы в ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/youtube.svg" width="24" height="24">
+              <span class="visually-hidden">Мы в Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="gifts">
       <h2 class="visually-hidden">Специальные предложения</h2>
