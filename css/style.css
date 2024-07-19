@@ -264,6 +264,7 @@ img {
 .main-index__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-block-end: 80px;
   gap: 30px;
 }
 
@@ -624,50 +625,84 @@ img {
   background-image: url(../images/thermometer.svg);
 }
 
-
 .about__text {
   margin: 0;
 }
 
+/* News */
+
 .news {
+  padding-inline-start: 32px;
+  padding-block-start: 32px;
   border-radius: 16px;
   background-image: url(../images/news-bg.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right 0;
+  background-size: 115%;
+  background-position: top -105px right -75px;
   background-color: #FFFFFF;
 }
 
 .news__title {
+  margin-block: 0 12px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
 }
 
 .news__text {
+  margin-inline-end: 235px;
+  margin-block: 0 68px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
 }
 
+/* Subscribe */
+
 .subscribe {
   padding: 6px;
   border-radius: 16px;
   background-image: url(../images/subscribe_bg.png);
+  background-size: 110%;  
 }
 
-
 .subscribe__wrapper {
+  padding: 26px;
   border-radius: 16px;
   background-color: #FFFFFF;
 }
 
 .subscribe__text {
-  margin: 0;
+  margin-block: 0 42px;
 }
+
+.subscribe__form {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.subscribe__input {
+  flex-grow: 1;
+  padding-inline: 16px;
+  padding-block: 14px;
+  border: 1px #B9B9B9 solid;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.subscribe__button {
+  background-color: #FF2F64;
+  border-color: rgba(255, 47, 100, 0.3);
+  color: #FCFCFC;
+}
+
+/* Delivery */
 
 .delivery {
   display: flex;
+  margin-block-end: 80px;
   padding-block: 64px;
   background-color: #FFFFFF;
   border-radius: 16px;
