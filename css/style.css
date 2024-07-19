@@ -473,7 +473,15 @@ img {
   display: block;
 }
 
+/* Tastes */
+
+.tastes {
+  margin-block-end: 80px;
+}
+
 .tastes__slogan {
+  margin-block: 0 107px;
+  padding-inline: 320px;
   text-align: center;
   font-size: 32px;
   line-height: 46px;
@@ -481,8 +489,8 @@ img {
 }
 
 .tastes__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin: 0;
   padding: 0;
@@ -490,28 +498,58 @@ img {
 }
 
 .tastes__item {
+  padding-inline: 40px;
+  padding-block-end: 24px;
   text-align: center;
   background-color: #FCFCFC;
   border-radius: 8px;
 }
 
-.tastes__title {
+.taste__wrapper {
+  margin-block-start: -51px;
+}
+
+.taste__title {
+  margin-block: 0 8px;
   font-size: 20px;
   line-height: 24px;
 }
 
-.tastes__buy-block {
-  display: flex;
-  justify-content: space-between;
+.taste__description {
+  margin-block: 0 16px;
+  color: #565656;
 }
 
-.tastes__price {
+.taste__buy-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taste__price {
+  margin: 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
 }
 
+.taste__button {
+  position: relative;
+  inline-size: 32px;
+  block-size: 32px;
+  border-color: transparent;
+  border-radius: 26px;
+  background-color: #FF2F64;
+}
+
+.taste__icon {
+  fill: #FCFCFC;
+}
+
+/* About */
+
 .about {
+  margin-block-end: 80px;
   padding: 24px;
   background-image: url(../images/about-bg.png);
   background-repeat: no-repeat;
@@ -520,12 +558,14 @@ img {
 }
 
 .about__wrapper {
+  padding-inline: 40px;
+  padding-block: 56px;
   border-radius: 16px;
   background-color: #FFFFFF;
 }
 
 .about__slogan {
-  margin: 0;
+  margin-block: 0 56px;
   text-align: center;
   font-size: 32px;
   line-height: 46px;
@@ -535,11 +575,55 @@ img {
 .about__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px 40px;
+  gap: 40px 32px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
+.about__item {
+  position: relative;
+  padding-inline-start: 64px;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    inline-size: 48px;
+    block-size: 48px;
+    border: 2px #2D3340 solid;
+    border-radius: 50%;
+
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    inline-size: 24px;
+    block-size: 24px;
+    background-repeat: no-repeat;
+    left: 12px;
+    top: 12px;
+  }
+}
+
+.about__item--ice-cream::after {
+  background-image: url(../images/ice-cream.svg);
+}
+
+.about__item--cow::after {
+  background-image: url(../images/cow.svg);
+}
+
+.about__item--leaf::after {
+  background-image: url(../images/leaf.svg);
+}
+
+.about__item--thermometer::after {
+  background-image: url(../images/thermometer.svg);
+}
+
 
 .about__text {
   margin: 0;
