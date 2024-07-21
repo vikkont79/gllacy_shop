@@ -36,9 +36,8 @@
       <div class="main-nav__list user-nav">
         <a class="user-nav__phone" href="tel:88005558628">+7 800 555-86-28</a>
         <ul class="user-nav__list">
-          <li class="user-nav__item">
+          <li class="user-nav__item user-nav__item--seach">
             <a class="user-nav__link user-nav__link--seach" href="#">
-
               <svg class="user-nav__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -47,7 +46,7 @@
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="user-nav__item">
+          <li class="user-nav__item user-nav__item--login">
             <a class="user-nav__link" href="#">
               <svg class="user-nav__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -57,20 +56,61 @@
               Вход
             </a>
           </li>
-          <li class="user-nav__item">
+          <li class="user-nav__item user-nav__item--cart">
             <a class="user-nav__link" href="#">
               <svg class="user-nav__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M1.16667 1.25C0.798477 1.25 0.5 1.54848 0.5 1.91667C0.5 2.28486 0.798477 2.58333 1.16667 2.58333H2.93794L3.40537 4.91872C3.40821 4.93667 3.41176 4.95438 3.416 4.97182L4.38338 9.80515L4.3835 9.80571C4.46706 10.2257 4.69562 10.603 5.02921 10.8715C5.36111 11.1387 5.77595 11.2813 6.20183 11.2748H11.8225C12.2484 11.2813 12.6633 11.1387 12.9952 10.8715C13.3289 10.6029 13.5575 10.2254 13.641 9.80515L13.641 9.80515L13.642 9.80016L14.5691 4.93872C14.6063 4.74355 14.5545 4.54195 14.4279 4.38887C14.3012 4.23578 14.1129 4.14716 13.9142 4.14716H4.61072L4.1381 1.78583C4.07574 1.47426 3.80215 1.25 3.4844 1.25H1.16667ZM5.69098 9.54444L4.87759 5.4805H13.1084L12.3328 9.54736C12.31 9.65988 12.2485 9.7609 12.1591 9.83291C12.0691 9.90535 11.9565 9.94383 11.841 9.94162L11.841 9.94149H11.8282H6.19614V9.94137L6.18337 9.94162C6.06787 9.94383 5.95528 9.90535 5.8653 9.83291C5.77531 9.76048 5.71368 9.6587 5.69117 9.5454L5.69098 9.54444ZM4.55739 13.5054C4.55739 12.8175 5.1151 12.2597 5.80307 12.2597C6.49105 12.2597 7.04876 12.8175 7.04876 13.5054C7.04876 14.1934 6.49105 14.7511 5.80307 14.7511C5.1151 14.7511 4.55739 14.1934 4.55739 13.5054ZM10.9307 13.5054C10.9307 12.8175 11.4884 12.2597 12.1764 12.2597C12.8644 12.2597 13.4221 12.8175 13.4221 13.5054C13.4221 14.1934 12.8644 14.7511 12.1764 14.7511C11.4884 14.7511 10.9307 14.1934 10.9307 13.5054Z" />
               </svg>
+              <span class="visually-hidden">Корзина</span>
               2 товара
             </a>
+            <div class="popover popover-cart">
+              <div class="popover__content">
+                <h2 class="popover__title">Корзина</h2>
+                <ul class="popover-cart__list">
+                  <li class="popover-cart__item cart-product">
+                    <div class="cart-product__item">
+                      <img class="cart-product__img" src="images/raspberry-taste.png" width="46" height="46"
+                        alt="Шарик мороженого вкус малина">
+                      <div class="cart-product__description">
+                        <p class="cart-product__title">Малинка</p>
+                        <p class="cart-product__base-price">1 кг х 310 ₽</p>
+                      </div>
+                    </div>
+                    <p class="cart-product__total-price">310 ₽</p>
+                    <button class="cart-product__cross-button">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="popover-cart__item cart-product">
+                    <div class="cart-product__item">
+                      <img class="cart-product__img" src="images/bubblegum-taste.png" width="46" height="46"
+                        alt="Шарик мороженого вкус малина">
+                      <div class="cart-product__description">
+                        <p class="cart-product__title">Бабл-гам</p>
+                        <p class="cart-product__base-price">1 кг х 480 ₽</p>
+                      </div>
+                    </div>
+                    <p class="cart-product__total-price">480 ₽</p>
+                    <button class="cart-product__cross-button">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-cart__buy-block">
+                  <button class="popover-cart__button button" type="button">Оформить заказ</button>
+                  <p class="popover-cart__price">Итого: 790 ₽</p>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
     </nav>
   </header>
+
   <main class="main-index wrapper">
 
     <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
@@ -389,7 +429,8 @@
             доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         </div>
         <div class="delivery__info">
-          <p class="delivery__info-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery__info-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+          </p>
           <form class="delivery__form delivery-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="delivery-form__group">
               <span class="delivery-form__label">
