@@ -45,6 +45,16 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
+            <div class="popover popover-search">
+              <div class="popover__content">
+                <h2 class="visually-hidden">Поиск по сайту</h2>
+                <form class="popover-search__form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+                  <input class="popover-search__input" type="search" name="site-search" id="site-search"
+                    placeholder="Поиск по сайту" required>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="user-nav__item user-nav__item--login">
             <a class="user-nav__link" href="#">
@@ -55,6 +65,26 @@
               </svg>
               Вход
             </a>
+            <div class="popover popover-login">
+              <div class="popover__content">
+                <h2 class="popover__title">Личный кабинет</h2>
+                <form class="popover-login__form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="visually-hidden" for="popover-login-email">Email</label>
+                  <input class="popover-login__input" type="email" name="popover-login-email" id="popover-login-email"
+                    placeholder="email@example.com" required>
+                  <label class="visually-hidden" for="popover-login-password">Email</label>
+                  <input class="popover-login__input" type="password" name="popover-login-password"
+                    id="popover-login-password" placeholder="******" required>
+                </form>
+                <div class="popover-login__signin-block">
+                  <button class="popover-login__button button" type="button">Войти</button>
+                  <div class="popover-login__signin-info">
+                    <a class="popover-login__link" href="#">Забыли пароль?</a>
+                    <a class="popover-login__link" href="#">Регистрация</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="user-nav__item user-nav__item--cart">
             <a class="user-nav__link" href="#">
