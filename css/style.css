@@ -66,6 +66,39 @@ img {
   box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.1);
 }
 
+.input {
+  padding-inline: 16px;
+  padding-block: 14px;
+  border: 1px #B9B9B9 solid;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    border-color: #2D3340;
+  }
+
+  &:focus {
+    outline: none;
+    border-width: 3px;
+  }
+
+  &:invalid {
+    border-color: #EA5454;
+
+    &:hover {
+      border-width: 3px;
+    }
+  }
+
+  &:disabled {
+    background-color: #E7E7E7;
+    opacity: 0.65;
+  }
+}
+
 /* Page */
 
 .page {
@@ -154,11 +187,12 @@ img {
   &:focus {
     border-radius: 30px;
     background-color: rgba(252, 252, 252, 0.5);
+    transition: background-color 100ms ease-out;
   }
 
   &:focus {
     outline: none;
-    border: 2px #000000 solid;
+    outline: 2px #000000 solid;
   }
 
   &:active {
@@ -182,9 +216,23 @@ img {
 
 .site-nav__link:focus-within:has(~.header-catalog__list) {
   background-color: #FF4A78;
-  border-color: transparent;
+  outline-color: transparent;
   border-radius: 30px;
   color: #FCFCFC;
+  
+
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 100ms ease-out;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline-color: #000000;
+  }
 }
 
 .site-nav__link:focus-within:has(~.header-catalog__list) .site-nav__icon {
@@ -196,7 +244,7 @@ img {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 40px;
+  top: 44px;
   left: 0;
   inline-size: 138px;
   margin: 0;
@@ -235,8 +283,11 @@ img {
 }
 
 .header-catalog__item:has(.header-catalog__link) {
+  transition: background-color 100ms ease-out;
+
   &:hover {
     background-color: #FFCBD8;
+    transition: background-color 100ms ease-out;
   }
 
   &:active {
@@ -247,6 +298,10 @@ img {
     background-color: #FF4A78;
     color: #FCFCFC;
   }
+}
+
+.header-catalog__link:focus {
+  outline: none;
 }
 
 .user-nav {
@@ -282,8 +337,7 @@ img {
   padding-inline: 16px;
   padding-block: 6px;
   border-radius: 30px;
-  background-color: rgba(252, 252, 252, 0.3);
-  transition: background-color 100ms ease-out;
+  background-color: rgba(252, 252, 252, 0.3);  
 
   &:hover,
   &:focus {
@@ -292,7 +346,7 @@ img {
 
   &:focus {
     outline: none;
-    border: 2px #000000 solid;
+    outline: 2px #000000 solid;
   }
 
   &:active {
@@ -323,11 +377,43 @@ img {
   inset: 0;
 }
 
+.user-nav__item--seach .user-nav__link:focus-within:has(~.popover) {
+  background-color: #FF4A78;
+  transition: opacity 100ms ease-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline-color: #000000;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }  
+}
+
+.user-nav__item--seach .user-nav__link:focus-within:has(~.popover) .user-nav__icon {
+  fill: #FFFFFF;
+}
+
 .user-nav__link:focus-within:has(~.popover) {
   background-color: #FF4A78;
-  border-color: transparent;
-  border-radius: 30px;
+  outline-color: transparent;
   color: #FCFCFC;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline-color: #000000;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }  
 }
 
 .user-nav__link:focus-within:has(~.popover) .user-nav__icon {
@@ -764,12 +850,7 @@ img {
 
 .subscribe__input {
   flex-grow: 1;
-  padding-inline: 16px;
-  padding-block: 14px;
-  border: 1px #B9B9B9 solid;
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 20px;
+  color: #B9B9B9;
 }
 
 .subscribe__button {
@@ -869,14 +950,7 @@ img {
 }
 
 .delivery-form__input {
-  padding-inline: 16px;
-  padding-block: 14px;
-  border: 1px #B9B9B9 solid;
-  border-radius: 4px;
   color: #B9B9B9;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .delivery__button {
@@ -1155,14 +1229,6 @@ img {
 
 .popover-login__input {
   inline-size: 100%;
-  padding-inline: 16px;
-  padding-block: 14px;
-  border: 1px #B9B9B9 solid;
-  border-radius: 4px;
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .popover-login__input:not(:last-of-type) {
@@ -1200,12 +1266,4 @@ img {
 
 .popover-search__input {
   inline-size: 100%;
-  padding-inline: 16px;
-  padding-block: 14px;
-  border: 1px #B9B9B9 solid;
-  border-radius: 4px;
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
 }

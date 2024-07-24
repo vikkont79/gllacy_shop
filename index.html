@@ -67,7 +67,7 @@
                 <h2 class="visually-hidden">Поиск по сайту</h2>
                 <form class="popover-search__form" action="https://echo.htmlacademy.ru/" method="post">
                   <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-                  <input class="popover-search__input" type="search" name="site-search" id="site-search"
+                  <input class="popover-search__input input" type="search" name="site-search" id="site-search"
                     placeholder="Поиск по сайту" required>
                 </form>
               </div>
@@ -87,14 +87,14 @@
                 <h2 class="popover__title">Личный кабинет</h2>
                 <form class="popover-login__form" action="https://echo.htmlacademy.ru/" method="post">
                   <label class="visually-hidden" for="popover-login-email">Email</label>
-                  <input class="popover-login__input" type="email" name="popover-login-email" id="popover-login-email"
+                  <input class="popover-login__input input" type="email" name="popover-login-email" id="popover-login-email"
                     placeholder="email@example.com" required>
                   <label class="visually-hidden" for="popover-login-password">Email</label>
-                  <input class="popover-login__input" type="password" name="popover-login-password"
-                    id="popover-login-password" placeholder="******" required>
+                  <input class="popover-login__input input" type="password" name="popover-login-password"
+                    id="popover-login-password" placeholder="******" required disabled>
                 </form>
                 <div class="popover-login__signin-block">
-                  <button class="popover-login__button button" type="button">Войти</button>
+                  <button class="popover-login__button button" type="submit">Войти</button>
                   <div class="popover-login__signin-info">
                     <a class="popover-login__link" href="#">Забыли пароль?</a>
                     <a class="popover-login__link" href="#">Регистрация</a>
@@ -460,7 +460,7 @@
             что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Email</label>
-            <input class="subscribe__input" type="email" name="subscribe-email" id="subscribe-email"
+            <input class="subscribe__input input" type="email" name="subscribe-email" id="subscribe-email"
               placeholder="email@example.com" required>
             <button class="subscribe__button button" type="submit">Отправить</button>
           </form>
@@ -486,12 +486,12 @@
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </span>
-              <input class="delivery-form__input" type="text" name="delivery-date" id="delivery-date"
+              <input class="delivery-form__input input" type="text" name="delivery-date" id="delivery-date"
                 placeholder="01.04.2020" required>
             </p>
             <p class="delivery-form__group">
               <label class="delivery-form__label" for="delivery-phone">Телефон</label>
-              <input class="delivery-form__input" type="text" name="delivery-phone" id="delivery-phone"
+              <input class="delivery-form__input input" type="text" name="delivery-phone" id="delivery-phone"
                 placeholder="+7 800 999-00-00" required>
             </p>
             <p class="delivery-form__group delivery-form__group--adress">
@@ -501,7 +501,7 @@
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </span>
-              <input class="delivery-form__input" type="text" name="delivery-adress" id="delivery-adress"
+              <input class="delivery-form__input input" type="text" name="delivery-adress" id="delivery-adress"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>
             <button class="delivery__button button" type="submit">Отправить</button>
