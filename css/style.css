@@ -56,14 +56,35 @@ img {
 .button {
   padding-inline: 32px;
   padding-block: 12px;
-  border: 4px rgba(252, 252, 252, 0.4) solid;
+  outline: 4px rgba(252, 252, 252, 0.4) solid;
+  border: none;
   border-radius: 26px;
   background-color: #FCFCFC;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  cursor: pointer;
   box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.1);
+  transform: background-color 100ms ease-out, outline-color 100ms ease-out, box-shadow 100ms ease-out;
+
+  &:hover {
+    background-color: rgba(252, 252, 252, 0.4);
+    outline-color: #FCFCFC;
+    box-shadow: 0px 4px 15px 0px rgba(133, 133, 133, 0.15);    
+    transform: background-color 100ms ease-out, outline-color 100ms ease-out, box-shadow 100ms ease-out;
+  }
+
+  &:focus {
+    background-color: rgba(252, 252, 252, 0.5);
+    outline: 2px solid #2D3440;
+  }
+
+  &:active {
+    background-color: #FCFCFC;
+    outline: 2px solid #2D3440;
+    box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.1);    
+  } 
 }
 
 .input {
