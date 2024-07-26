@@ -172,7 +172,7 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   margin: 0;
-
+  background-color: #FEAFC3;
   color: #2D3340;
 }
 
@@ -717,7 +717,7 @@ img {
 .tastes__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 81px 30px;
   margin: 0;
   padding: 0;
   list-style-type: none;
