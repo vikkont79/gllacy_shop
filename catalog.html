@@ -190,7 +190,27 @@
             </select>
           </div>
         </fieldset>
-        <fieldset class="filter__groupe filter__groupe--price"></fieldset>
+        <fieldset class="filter__groupe filter__groupe--price">
+          <legend class="visually-hidden">Цена</legend>
+          <div class="filter__title range__inputs">
+            <label class="range__label">
+              Цена: <input class="range__input" type="number" value="100" name="min-price">₽
+            </label>
+            <label class="range__label">
+              <input class="range__input" type="number" value="500" name="max-price">₽
+            </label>
+          </div>
+          <div class="range__scale">
+            <div class="range__bar" style="left: 40px; width: 56px;">
+              <button class="range__toggle toggle-min" type="button">
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+              </button>
+              <button class="range__toggle toggle-max" type="button">
+                <span class="visually-hidden">Изменить максимальную цену.</span>
+              </button>
+            </div>
+          </div>
+        </fieldset>
         <fieldset class="filter__groupe filter__groupe--fatness">
           <legend class="filter__title">Жирность:</legend>
           <ul class="filter__list">
@@ -229,14 +249,14 @@
           <ul class="filter__list">
             <li class="filter__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="chokolate">
+                <input class="control__input" type="checkbox" name="chokolate" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">шоколадные</span>
               </label>
             </li>
             <li class="filter__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="sugar">
+                <input class="control__input" type="checkbox" name="sugar" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">сахарные посыпки</span>
               </label>
@@ -349,10 +369,10 @@
             <div class="taste__wrapper">
               <img class="taste__img" src="images/blackberry-taste.png" width="168" height="168"
                 alt="Шарик мороженого вкус ежевика">
-              <h3 class="taste__title">Малинка</h3>
-              <p class="taste__description">Сливочное мороженое с малиновым джемом</p>
+              <h3 class="taste__title">Ежевика</h3>
+              <p class="taste__description">Сливочное мороженое с ежевичным джемом</p>
               <div class="taste__buy-block">
-                <p class="taste__price">310 ₽/кг</p>
+                <p class="taste__price">330 ₽/кг</p>
                 <button class="taste__button" type="button">
                   <svg class="taste__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -368,8 +388,8 @@
             <div class="taste__wrapper">
               <img class="taste__img" src="images/banana-taste.png" width="168" height="168"
                 alt="Шарик мороженого вкус банан">
-              <h3 class="taste__title">Фисташка</h3>
-              <p class="taste__description">Фисташковый пломбир с кусочками шоколада</p>
+              <h3 class="taste__title">Банан</h3>
+              <p class="taste__description">Сливочный пломбир с банановым вкусом</p>
               <div class="taste__buy-block">
                 <p class="taste__price">340 ₽/кг</p>
                 <button class="taste__button" type="button">
@@ -387,10 +407,10 @@
             <div class="taste__wrapper">
               <img class="taste__img" src="images/chokolate-taste.png" width="168" height="168"
                 alt="Шарик мороженого вкус шоколад">
-              <h3 class="taste__title">Черника</h3>
-              <p class="taste__description">Крем-брюле с черничным джемом</p>
+              <h3 class="taste__title">Шоколадка</h3>
+              <p class="taste__description">Классический шоколадный пломбир</p>
               <div class="taste__buy-block">
-                <p class="taste__price">330 ₽/кг</p>
+                <p class="taste__price">270 ₽/кг</p>
                 <button class="taste__button" type="button">
                   <svg class="taste__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -406,10 +426,10 @@
             <div class="taste__wrapper">
               <img class="taste__img" src="images/strawberry-taste.png" width="168" height="168"
                 alt="Шарик мороженого вкус клубника">
-              <h3 class="taste__title">Бабл-гам</h3>
-              <p class="taste__description">Ванильный пломбир со сладкой посыпкой</p>
+              <h3 class="taste__title">Клубничка</h3>
+              <p class="taste__description">Сливочный пломбир с клубничным вкусом</p>
               <div class="taste__buy-block">
-                <p class="taste__price">320 ₽/кг</p>
+                <p class="taste__price">300 ₽/кг</p>
                 <button class="taste__button" type="button">
                   <svg class="taste__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -425,8 +445,8 @@
             <div class="taste__wrapper">
               <img class="taste__img" src="images/lemon-taste.png" width="168" height="168"
                 alt="Шарик мороженого вкус лимон">
-              <h3 class="taste__title">Малинка</h3>
-              <p class="taste__description">Сливочное мороженое с малиновым джемом</p>
+              <h3 class="taste__title">Лимон</h3>
+              <p class="taste__description">Освежающий лимонный сорбет</p>
               <div class="taste__buy-block">
                 <p class="taste__price">310 ₽/кг</p>
                 <button class="taste__button" type="button">
@@ -444,10 +464,10 @@
             <div class="taste__wrapper">
               <img class="taste__img" src="images/menthol-taste.png" width="168" height="168"
                 alt="Шарик мороженого вкус ментол">
-              <h3 class="taste__title">Фисташка</h3>
-              <p class="taste__description">Фисташковый пломбир с кусочками шоколада</p>
+              <h3 class="taste__title">Ментол</h3>
+              <p class="taste__description">Сливочный пломбир с ментоловым сиропом</p>
               <div class="taste__buy-block">
-                <p class="taste__price">340 ₽/кг</p>
+                <p class="taste__price">320 ₽/кг</p>
                 <button class="taste__button" type="button">
                   <svg class="taste__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -463,10 +483,10 @@
             <div class="taste__wrapper">
               <img class="taste__img" src="images/nut-taste.png" width="168" height="168"
                 alt="Шарик мороженого вкус фисташка с шоколадом">
-              <h3 class="taste__title">Черника</h3>
-              <p class="taste__description">Крем-брюле с черничным джемом</p>
+              <h3 class="taste__title">Орешек</h3>
+              <p class="taste__description">Фисташковый пломбир с шоколадным сиропом</p>
               <div class="taste__buy-block">
-                <p class="taste__price">330 ₽/кг</p>
+                <p class="taste__price">360 ₽/кг</p>
                 <button class="taste__button" type="button">
                   <svg class="taste__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -482,10 +502,10 @@
             <div class="taste__wrapper">
               <img class="taste__img" src="images/cream-taste.png" width="168" height="168"
                 alt="Шарик мороженого вкус крем-брюле">
-              <h3 class="taste__title">Бабл-гам</h3>
-              <p class="taste__description">Ванильный пломбир со сладкой посыпкой</p>
+              <h3 class="taste__title">Крем-брюле</h3>
+              <p class="taste__description">Классическое крем-брюле </p>
               <div class="taste__buy-block">
-                <p class="taste__price">320 ₽/кг</p>
+                <p class="taste__price">280 ₽/кг</p>
                 <button class="taste__button" type="button">
                   <svg class="taste__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
