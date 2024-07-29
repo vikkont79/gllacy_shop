@@ -1366,3 +1366,71 @@ img {
 .popover-search__input {
   inline-size: 100%;
 }
+
+/* Catalog__header */
+
+.main-catalog__title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.main-catalog__list {
+  margin: 0;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+/* Products__filter */
+
+.products__filter {
+  margin-block-end: 95px;
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 16px 24px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.filter__groupe--fatness {
+  grid-column: span 2;
+}
+
+.filter__groupe--taste {
+  grid-column: span 3;
+}
+
+.filter__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 41px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
