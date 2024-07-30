@@ -1429,11 +1429,11 @@ img {
 
 .products__filter {
   margin-block-end: 95px;
-  margin-inline-end: 340px;
+  margin-inline-end: 347px;
 }
 
 .filter {
-  display: grid;  
+  display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 16px 24px;
   font-size: 14px;
@@ -1505,7 +1505,7 @@ img {
 }
 
 .range__scale {
-  position: relative;  
+  position: relative;
   block-size: 2px;
   background-color: rgba(86, 92, 102, 0.3);
 }
@@ -1558,7 +1558,61 @@ img {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.filter__button {  
+.control {
+  position: relative;
+  display: block;
+  padding-inline-start: 24px;
+}
+
+.control__mark {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  inline-size: 16px;
+  block-size: 16px;
+  border: 1px #000000 solid;
+  border-radius: 10%;
+}
+
+.control__input[type="radio"]+.control__mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked+.control__mark::before {
+  position: absolute;
+  content: "";
+  left: 4px;
+  top: 4px;
+  inline-size: 6px;
+  block-size: 6px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before,
+.control__input[type="checkbox"]:checked + .control__mark::after {
+  position: absolute;
+  content: "";
+  inline-size: 1px; 
+  background-color: #000000;
+  }
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  top: 6px;
+  left: 6px;
+  block-size: 5px;
+  transform: rotate(-45deg);
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::after {
+  top: -2px;
+  left: 13px;
+  z-index: -5;
+  block-size: 14px;  
+  transform: rotate(45deg);
+}
+
+.filter__button {
   margin-inline-end: 16px;
   margin-block-start: auto;
   padding-block: 8px;
