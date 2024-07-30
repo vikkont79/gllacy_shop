@@ -1118,8 +1118,8 @@ img {
   display: inline-block;
   inline-size: 24px;
   block-size: 24px;
-  border-radius: 24px; 
-  outline: 2px solid rgba(252, 252, 252, 0.3); 
+  border-radius: 24px;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
   background-color: transparent;
 
   &:hover {
@@ -1139,7 +1139,7 @@ img {
 }
 
 .social__img {
-  display: block; 
+  display: block;
 }
 
 .footer-nav {
@@ -1369,7 +1369,12 @@ img {
 
 /* Catalog__header */
 
+.main-catalog__header {
+  margin-block: 32px 40px;
+}
+
 .main-catalog__title {
+  margin: 0;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -1377,6 +1382,7 @@ img {
 
 .main-catalog__list {
   margin: 0;
+  margin-block-end: 16px;
 }
 
 .breadcrumbs {
@@ -1386,6 +1392,37 @@ img {
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
+}
+
+.breadcrumbs__item:not(:last-of-type) {
+  position: relative;
+  padding-inline-end: 28px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 8px;
+    top: 4px;
+    inline-size: 12px;
+    block-size: 12px;
+    background-image: url(../images/arrow-dub.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.breadcrumbs__item--current {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    inline-size: 100%;
+    block-size: 1px;
+    background-color: #2D3440;
+  }  
 }
 
 /* Products__filter */
@@ -1400,6 +1437,12 @@ img {
   gap: 16px 24px;
   font-size: 14px;
   line-height: 20px;
+}
+
+.filter__groupe {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .filter__groupe--fatness {
@@ -1432,5 +1475,3 @@ img {
   padding: 0;
   list-style-type: none;
 }
-
-
