@@ -1422,17 +1422,18 @@ img {
     inline-size: 100%;
     block-size: 1px;
     background-color: #2D3440;
-  }  
+  }
 }
 
 /* Products__filter */
 
 .products__filter {
   margin-block-end: 95px;
+  margin-inline-end: 340px;
 }
 
 .filter {
-  display: grid;
+  display: grid;  
   grid-template-columns: repeat(4, auto);
   gap: 16px 24px;
   font-size: 14px;
@@ -1453,11 +1454,115 @@ img {
   grid-column: span 3;
 }
 
+.filter__title {
+  margin-inline-start: 16px;
+  margin-block-end: 8px;
+}
+
+.select {
+  position: relative;
+  inline-size: 196px;
+}
+
+.select__control {
+  inline-size: 100%;
+  padding: 8px 16px;
+  padding-inline-end: 63px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  color: inherit;
+  font: inherit;
+  appearance: none;
+}
+
+.range__inputs {
+  inline-size: 135px;
+}
+
+.range__input {
+  inline-size: 25px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  appearance: textfield;
+}
+
+.range__input::-webkit-outer-spin-button,
+.range__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range__block {
+  inline-size: 196px;
+  padding: 18px 16px;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.range__scale {
+  position: relative;  
+  block-size: 2px;
+  background-color: rgba(86, 92, 102, 0.3);
+}
+
+.range__bar {
+  position: absolute;
+  block-size: 2px;
+  background-color: #565C66;
+}
+
+.range__toggle {
+  position: absolute;
+  top: -7px;
+  inline-size: 16px;
+  block-size: 16px;
+  border: none;
+  border-radius: 50%;
+  background-color: #2D3440;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 6px;
+    top: 6px;
+    inline-size: 4px;
+    block-size: 4px;
+    border-radius: 50%;
+    background-color: #FCFCFC;
+  }
+}
+
+.range__toggle--min {
+  left: -8px;
+}
+
+.range__toggle--max {
+  right: -8px;
+}
+
 .filter__list {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
   margin: 0;
-  padding: 0;
+  padding: 8px 24px;
   list-style-type: none;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.filter__button {  
+  margin-inline-end: 16px;
+  margin-block-start: auto;
+  padding-block: 8px;
+  font-size: 14px;
 }
 
 .pagination-block {
