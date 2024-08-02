@@ -589,19 +589,43 @@ img {
   justify-content: space-between;
 }
 
-.promo__button {
+.promo__button {  
   inline-size: 40px;
   block-size: 40px;
+  padding: 11px;
   border: 2px #FCFCFC solid;
-  border-radius: 26px;
-  background-image: url(../images/arrow-right.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 26px;  
   background-color: rgba(252, 252, 252, 0.3);
+  transition: background-color 100ms ease-out;
+
+  &:hover {
+    background-color: #FCFCFC;
+    transition: background-color 100ms ease-out;
+  }
+
+  &:focus {
+    outline: 2px #2D3440 solid;
+    background-color: rgba(252, 252, 252, 0.3);
+  }
+
+  &:active {
+    background-color: rgba(252, 252, 252, 0.5);
+    transition: background-color 100ms ease-out, outline 100ms ease-out;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
 }
 
-.promo__button--prev {
-  transform: rotate(180deg);
+.promo__icon {    
+  fill: #FCFCFC;  
+}
+
+.promo__button:hover .promo__icon,
+.promo__button:focus .promo__icon,
+.promo__button:active .promo__icon {
+  fill: #2D3440;
 }
 
 .promo__footer {
@@ -625,13 +649,28 @@ img {
   inline-size: 12px;
   block-size: 12px;
   border-color: transparent;
-  border-radius: 50%;
-  background-color: #FCFCFC;
-  opacity: 0.3;
+  border-radius: 100px;  
+  background-color: rgba(252, 252, 252, 0.3);
+  transition: background-color 100ms ease-out;
+
+  &:hover {
+    outline: 1px #FCFCFC solid;
+    outline-offset: -1px;
+    transition: background-color 100ms ease-out;
+  }
+
+    &:focus{
+    outline-color: #2D3440;
+  }
+
+  &:active {
+    background-color: rgba(252, 252, 252, 0.5);
+    transition: outline-color 100ms ease-out;
+  }
 }
 
 .promo__toggle--current {
-  opacity: 1;
+  background-color: #FCFCFC;
 }
 
 .promo__social {
@@ -1684,6 +1723,8 @@ img {
     opacity: 0.4;
   }
 }
+
+/* Products__catalog */
 
 .products__catalog {
   margin-block-end: 40px;
