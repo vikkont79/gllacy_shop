@@ -128,7 +128,8 @@ img {
 .input {
   padding-inline: 16px;
   padding-block: 14px;
-  border: 1px #B9B9B9 solid;
+  border: none;
+  outline: 1px #B9B9B9 solid;
   border-radius: 4px;
   background-color: #FFFFFF;
   font-family: inherit;
@@ -136,19 +137,18 @@ img {
   line-height: 20px;
 
   &:hover {
-    border-color: #2D3340;
+    outline-color: #2D3340;
   }
 
-  &:focus {
-    outline: none;
-    border-width: 3px;
+  &:focus {    
+    outline-width: 3px;
   }
 
   &:invalid {
-    border-color: #EA5454;
+    outline-color: #EA5454;
 
     &:hover {
-      border-width: 3px;
+      outline-width: 3px;
     }
   }
 
@@ -168,7 +168,7 @@ img {
 }
 
 .page__body {
-  min-inline-size: 1250px;
+  min-inline-size: 1366px;
   min-block-size: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -533,6 +533,10 @@ img {
   line-height: 24px;
 }
 
+.icecream__button {
+  margin-block-end: 138px;
+}
+
 .icecream__slide-show {
   margin: 0;
 }
@@ -789,6 +793,7 @@ img {
 .taste__buy-block {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
   align-items: center;
 }
 
@@ -1139,6 +1144,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  gap: 30px;
   padding-block: 48px;
 }
 
@@ -1209,6 +1215,7 @@ img {
 }
 
 .copyright {
+  max-inline-size: 200px;
   font-size: 12px;
   line-height: 16px;
 }
@@ -1739,6 +1746,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
   padding-block: 41px;
 }
 
