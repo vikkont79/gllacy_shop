@@ -214,17 +214,20 @@ img {
   gap: 16px;
 }
 
-.logo {
-  display: block;
+.logo {  
+  display: block;  
+  flex-shrink: 0;
 }
 
 .logo__img {
+  inline-size: 137px;
   display: block;
 }
 
 .site-nav__list {
+  min-inline-size: 422px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;  
   align-items: center;
   margin: 0;
   padding: 0;
@@ -365,18 +368,20 @@ img {
 }
 
 .user-nav {
+  min-inline-size: 431px;
   margin-block: 36px;
   gap: 16px;
 }
 
-.user-nav__phone {
+.user-nav__phone {  
+  min-inline-size: 148px;
   display: block;
   font-weight: 700;
 }
 
 .user-nav__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;  
   align-items: center;
   gap: 16px;
   margin: 0;
@@ -542,15 +547,17 @@ img {
 }
 
 .slide-show {
-  display: flex;
+  display: flex;  
   gap: 41px;
   align-items: center;
   padding: 0;
   list-style-type: none;
+  overflow: hidden;
 }
 
 .slide {
   position: relative;
+  flex-shrink: 0;
   padding-inline: 17px;
 
 
@@ -1463,6 +1470,7 @@ img {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
   font-size: 14px;
@@ -1654,7 +1662,7 @@ img {
 
 .filter__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;  
   align-items: center;
   gap: 16px;
   margin: 0;
@@ -1787,7 +1795,7 @@ img {
 }
 
 .pagination-block__button {
-  margin-inline: 335px;
+  margin-inline: 335px auto;
 }
 
 .pagination {
