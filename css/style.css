@@ -610,6 +610,7 @@ img {
 }
 
 .slide__img {
+  inline-size: 66px;
   display: block;
 }
 
@@ -774,6 +775,7 @@ img {
 }
 
 .gifts__img {
+  inline-size: 219px;
   display: block;
 }
 
@@ -1274,6 +1276,7 @@ img {
 }
 
 .social__img {
+  inline-size: 24px;
   display: block;
 }
 
