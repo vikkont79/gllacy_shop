@@ -241,11 +241,13 @@ img {
   position: relative;
 }
 
-.site-nav__link {
+.site-nav__link,
+.site-nav__button {
   position: relative;
   display: block;
   padding-inline: 16px;
   padding-block: 8px;
+  line-height: 20px;
   transition: background-color 100ms ease-out;
 
   &:hover,
@@ -265,7 +267,14 @@ img {
   }
 }
 
-.site-nav__link:has(.site-nav__icon) {
+.site-nav__button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.site-nav__link:has(.site-nav__icon),
+.site-nav__button:has(.site-nav__icon) {
   padding-inline-end: 38px;
 }
 
@@ -279,7 +288,7 @@ img {
   fill: #2D3340;
 }
 
-.site-nav__link:focus-within:has(~.header-catalog__list) {
+.site-nav__button:focus-within:has(~.header-catalog__list) {
   background-color: #FF4A78;
   outline-color: transparent;
   border-radius: 30px;
@@ -300,7 +309,7 @@ img {
   }
 }
 
-.site-nav__link:focus-within:has(~.header-catalog__list) .site-nav__icon {
+.site-nav__button:focus-within:has(~.header-catalog__list) .site-nav__icon {
   fill: #FCFCFC;
   transform: rotate(180deg);
 }
@@ -320,6 +329,8 @@ img {
   background-color: #FCFCFC;
   box-shadow: 0px 8px 16px 0px rgba(45, 52, 64, 0.12);
 }
+
+/* По ТЗ проекта не используется JS, поэтому логика открытия выпадающего списка реализована через :focus-within родительского элемента */
 
 .site-nav__item:focus-within .header-catalog__list {
   display: block;
@@ -396,7 +407,8 @@ img {
   position: relative;
 }
 
-.user-nav__link {
+.user-nav__link,
+.user-nav__button {
   position: relative;
   display: block;
   min-inline-size: 32px;
@@ -405,6 +417,7 @@ img {
   padding-block: 6px;
   border-radius: 30px;
   background-color: rgba(252, 252, 252, 0.3);
+  line-height: 20px;
 
   &:hover,
   &:focus {
@@ -421,7 +434,13 @@ img {
   }
 }
 
-.user-nav__link:has(.user-nav__icon):not(.user-nav__item--seach .user-nav__link) {
+.user-nav__button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.user-nav__button:has(.user-nav__icon):not(.user-nav__item--seach .user-nav__button) {
   padding-inline-start: 38px;
 }
 
@@ -435,7 +454,7 @@ img {
   fill: #2D3340;
 }
 
-.user-nav__item--seach .user-nav__link {
+.user-nav__item--seach .user-nav__button {
   padding: 8px;
   border-radius: 27px;
 }
@@ -444,7 +463,7 @@ img {
   inset: 0;
 }
 
-.user-nav__item--seach .user-nav__link:focus-within:has(~.popover) {
+.user-nav__item--seach .user-nav__button:focus-within:has(~.popover) {
   background-color: #FF4A78;
   transition: opacity 100ms ease-out;
 
@@ -461,11 +480,11 @@ img {
   }
 }
 
-.user-nav__item--seach .user-nav__link:focus-within:has(~.popover) .user-nav__icon {
+.user-nav__item--seach .user-nav__button:focus-within:has(~.popover) .user-nav__icon {
   fill: #FFFFFF;
 }
 
-.user-nav__link:focus-within:has(~.popover) {
+.user-nav__button:focus-within:has(~.popover) {
   background-color: #FF4A78;
   outline-color: transparent;
   color: #FCFCFC;
@@ -483,7 +502,7 @@ img {
   }
 }
 
-.user-nav__link:focus-within:has(~.popover) .user-nav__icon {
+.user-nav__button:focus-within:has(~.popover) .user-nav__icon {
   fill: #FCFCFC;
 }
 
