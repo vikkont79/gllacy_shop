@@ -177,6 +177,8 @@ img {
   color: #2D3340;
 }
 
+/* Смена фонового цвета body при назначении класса .slider__item--current элементам слайдера*/
+
 .page__body:has(.slider__item--current .icecream__block--strawberry) {
   background-color: #FEAFC3;
 }
@@ -1287,15 +1289,11 @@ img {
   box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
 }
 
+/* По ТЗ проекта не используется JS, поэтому логика открытия попапов реализована через :focus-within родительских элементов */
+
 .user-nav__item:focus-within .popover {
   display: block;
 }
-
-/*.popover__close-button {
-  position: absolute;
-  right: 0;
-  top: 0;
-}*/
 
 .popover__content {
   block-size: 100%;
@@ -1448,6 +1446,73 @@ img {
 
 .popover-search__input {
   inline-size: 100%;
+}
+
+/* Modal */
+
+.modal-container {  
+  position: fixed;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  display: flex;
+  background-color: rgba(45, 52, 64, 0.3);
+}
+
+.modal-container--closed {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
+}
+
+.modal--feedback {
+  inline-size: 570px;
+}
+
+.modal__button {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  padding: 0;
+  background-color: #FCFCFC;
+}
+
+.close-button {
+  inline-size: 20px;
+  block-size: 20px;
+  border: none;
+  background-image: url(../images/cross-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin-block: 0 32px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.modal-form__input {
+  inline-size: 100%;
+  margin-block-end: 16px;
+  padding: 14px 16px;
+  border: 1px #B9B9B9 solid;
+  border-radius: 4px;
+}
+
+.modal-form__button {
+  display: block;
+  margin-inline-start: auto;
+  margin-block-start: 32px;
 }
 
 /* Catalog__header */
